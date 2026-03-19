@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+<div class="maindiv">
+<h3>Scientific-Calculator</h3>
+<input type="text" id="expression"  />
+
+<h3>Result: <span id="result"></span></h3>
+
+<div class="buttons">
+  <button onclick="addToInput('1')">1</button>
+  <button onclick="addToInput('2')">2</button>
+  <button onclick="addToInput('3')">3</button>
+  <button class="btnfun" onclick="addToInput('+')">+</button>
+
+  <button onclick="addToInput('4')">4</button>
+  <button onclick="addToInput('5')">5</button>
+  <button onclick="addToInput('6')">6</button>
+  <button class="btnfun" onclick="addToInput('-')">-</button>
+
+  <button onclick="addToInput('7')">7</button>
+  <button onclick="addToInput('8')">8</button>
+  <button onclick="addToInput('9')">9</button>
+  <button class="btnfun" onclick="addToInput('*')">*</button>
+
+  <button onclick="addToInput('0')">0</button>
+  <button onclick="addToInput('fact(')">n!</button>
+  <button onclick="addToInput('^')">^</button>
+  <button class="btnfun" onclick="addToInput('/')">/</button>
+  
+
+  <button onclick="addToInput('(')">(</button>
+  <button onclick="addToInput(')')">)</button>
+
+  <button onclick="addToInput('√(')">√</button>
+  <button class="buttonequal" onclick="calculate()">=</button>
+  
+  <button onclick="addToInput('cos(')">cos</button>
+  <button onclick="addToInput('tan(')">tan</button>
+  <button onclick="addToInput('sin(')">sin</button>
+
+  <button onclick="clearInput()">C</button>
+</div>
+<hr>
+</div>
+
+<div class="var">
+<h3>Add Variable</h3>
+<input id="varName" placeholder="name (x)" />
+<input id="varValue" placeholder="value (10)" />
+<button onclick="addVariable()">Add Variable</button>
+  <ul id="varList"></ul>
+
+</div>
+<hr>
+<div class="history">
+<h3>History</h3>
+<ul id="history"></ul>
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>

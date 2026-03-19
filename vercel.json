@@ -1,0 +1,8 @@
+{
+    "builds": [
+        {
+            "src": "calculator.html",
+            "use": "@vercel/static"
+        }
+    ]
+}
